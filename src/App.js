@@ -6,6 +6,7 @@ import { AuthProvider } from './contexts/auth'
 const App = () => {
   return (
     <AuthProvider>
+        hey
         <RoutesApp />
         <GlobalStyle />
     </AuthProvider>
