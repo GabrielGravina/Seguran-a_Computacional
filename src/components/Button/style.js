@@ -7,10 +7,12 @@ export const Button = styled.button`
     border-radius: 5px;
     width: 100%;
     cursor: pointer;
-    background-color: #66CDAA;
+    background-color: #667AFA;
     color: white;
     font-weight: 600;
     font-size: 16px;
     max-width: 350px;
-
+    margin-top: 5rem;
+    
 `
+

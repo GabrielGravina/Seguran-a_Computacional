@@ -4,6 +4,7 @@ import { Input } from '../../components/Input/style'
 import Button from '../../components/Button'
 import { Link, useNavigate } from 'react-router-dom'
 import useAuth from '../../hooks/useAuth'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 
 function validate_password(password) {

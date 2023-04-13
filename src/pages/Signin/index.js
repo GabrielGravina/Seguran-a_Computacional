@@ -5,10 +5,12 @@ import * as C from "./style"
 
 import { Link, useNavigate } from "react-router-dom"
 import useAuth from '../../hooks/useAuth'
-
+import ReCAPTCHA from 'react-google-recaptcha'
 
 
 const Signin = () => {
+
+    const onChange = () => {}
     const { signin } = useAuth()
     const navigate = useNavigate()
 
@@ -33,9 +35,11 @@ const Signin = () => {
  
 
   return (
+    
     <C.Container>
-        <C.Label>Página de Login</C.Label>
+        <C.Label>Olá! Bem vindo de volta</C.Label>
         <C.Content>
+        
             <Input
                 type="email"
                 placeholder="Digite seu e-mail"
@@ -47,6 +51,10 @@ const Signin = () => {
                 placeholder="Digite sua senha"
                 value={senha}
                 onChange={(e) => [setSenha(e.target.value),setError("")]}
+            />
+            <ReCAPTCHA
+                sitekey="6LcSq4YlAAAAAGcG4xHKtlaFjgJW2TGZtEcM1k8a"
+                onChange={onChange}
             />
             <C.LabelError>{error}</C.LabelError>
             <Button Text="Entrar" onClick={handleLogin} />
