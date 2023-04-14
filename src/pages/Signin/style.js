@@ -22,14 +22,15 @@ export const Content = styled.div`
     max-width: 790px;
     height:600px;
     padding: 20px;
-    border-radius:10px;
+    border-radius:50px;
 
 `
 
 export const Label = styled.label`
-    font-size:18px;
+    font-size:25px;
     font-weight:600;
     color:#fdfdfd;
+    margin-bottom: 1rem;
 
 `
 export const LabelSignup = styled.label`
